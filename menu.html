@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu - Ayam Barkembar</title>
-  <link rel="stylesheet" href="style.css"> <!-- global -->
-  <link rel="stylesheet" href="menu.css">  <!-- khusus menu -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
 </head>
 <body class="menu">
 
@@ -13,14 +13,17 @@
   <nav>
     <div class="brand">
       <img src="logo.jpg" alt="Logo" class="logo-small">
-      <span>Ayam Barkembar</span>
+      Ayam Barkembar
     </div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="menu.html" class="active">Menu</a>
-      <a href="about.html">Tentang Kami</a>
-      <a href="contact.html">Kontak</a>
-    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="about.html">Tentang Kami</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
   </nav>
 
   <!-- Daftar Menu -->
@@ -63,5 +66,10 @@
   </main>
 
   <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show");
+    }
+  </script>
 </body>
 </html>
