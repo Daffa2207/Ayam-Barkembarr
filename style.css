@@ -1,0 +1,172 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === NAVBAR === */
+nav {
+  background: #111;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+nav .brand img.nav-logo {
+  height: 30px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  background: #ff6600;
+  color: #fff;
+}
+
+/* === HERO (HOME) === */
+body.home .hero {
+  background: url("logo.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-attachment: fixed;
+}
+body.home .hero h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+body.home .hero p {
+  color: #fff;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+body.home .hero .btn {
+  background: #ff6600;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 15px;
+}
+body.home .hero .btn:hover {
+  background: #cc5200;
+}
+
+/* === CONTENT BOXES (ABOUT & CONTACT) === */
+.about-box,
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+.about-text,
+.contact-info,
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* === ABOUT LOGO === */
+.about-logo img {
+  max-width: 320px;
+  border-radius: 50%;
+  border: 5px solid #ff6600;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* === CONTACT INFO === */
+.contact-info p {
+  margin: 8px 0;
+}
+.contact-info a {
+  display: inline-block;
+  margin-top: 8px;
+  background: #25D366;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  background: #1ebe57;
+}
+
+/* === CONTACT FORM === */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.contact-form button {
+  align-self: flex-start;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #cc5200;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  background: #111;
+  color: #fff;
+}

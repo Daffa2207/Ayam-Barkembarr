@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Ayam Barkembar</title>
+  <link rel="stylesheet" href="style.css"> <!-- global -->
+  <link rel="stylesheet" href="menu.css">  <!-- khusus menu -->
+</head>
+<body class="menu">
+
+  <!-- Navbar -->
+  <nav>
+    <div class="brand">
+      <img src="logo.jpg" alt="Logo" class="logo-small">
+      <span>Ayam Barkembar</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="about.html">Tentang Kami</a>
+      <a href="contact.html">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- Daftar Menu -->
+  <main>
+    <h2 class="menu-title">Daftar Menu</h2>
+
+    <div class="filter-buttons">
+      <button class="active" onclick="filterMenu('all')">Semua</button>
+      <button onclick="filterMenu('makanan')">Makanan</button>
+      <button onclick="filterMenu('minuman')">Minuman</button>
+    </div>
+
+    <div class="menu-grid" id="menu-list"></div>
+
+    <!-- Keranjang -->
+    <div class="cart-box">
+      <h3>Keranjang Pesanan</h3>
+      <ul id="cart-list"></ul>
+      <p class="total">Total: Rp <span id="cart-total">0</span></p>
+
+      <label for="buyer-name">Nama Pemesan:</label>
+      <input type="text" id="buyer-name" placeholder="Masukkan nama Anda">
+
+      <label for="buyer-note">Catatan:</label>
+      <textarea id="buyer-note" placeholder="Tambahkan catatan (opsional)"></textarea>
+
+      <!-- Metode Pembayaran -->
+      <div class="payment-method">
+        <p>Metode Pembayaran:</p>
+        <label><input type="radio" name="payment" value="Cash" checked> Cash</label>
+        <label><input type="radio" name="payment" value="Transfer"> Transfer</label>
+        <label><input type="radio" name="payment" value="QRIS"> QRIS</label>
+      </div>
+
+      <div class="cart-buttons">
+        <button class="checkout" onclick="checkout()">Checkout via WhatsApp</button>
+        <button class="clear" onclick="clearCart()">Clear</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

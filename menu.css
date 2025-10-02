@@ -1,0 +1,186 @@
+/* ================== NAVBAR ================== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 10px 20px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav .brand img.logo-small {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 6px 14px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+nav .nav-links a:hover,
+nav .nav-links a.active {
+  background: #ff6600;
+  color: #fff;
+}
+
+/* ================== MENU TITLE ================== */
+.menu-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff6600;
+  margin: 30px 0 20px;
+}
+
+/* ================== FILTER BUTTONS ================== */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.filter-buttons button {
+  background: #ff6600;
+  border: none;
+  color: #fff;
+  padding: 8px 18px;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.filter-buttons button:hover,
+.filter-buttons .active {
+  background: #e63900;
+}
+
+/* ================== MENU GRID ================== */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ================== MENU CARD ================== */
+.menu-card {
+  background: #fff;
+  border: 2px solid #ff6600;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-card:hover { transform: scale(1.03); }
+
+/* ================== FIX GAMBAR ================== */
+.menu-card img {
+  width: 100% !important;
+  max-width: 180px;       /* batas lebar */
+  height: 150px !important; /* tinggi seragam */
+  object-fit: cover !important; /* biar proporsional */
+  border-radius: 8px;
+  margin: 0 auto 10px;    /* posisi tengah */
+  display: block;
+}
+
+.menu-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+  min-height: 40px;
+}
+
+.menu-card p {
+  color: #e63900;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ================== BUTTON + - ================== */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.controls button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.controls .add { background: #4CAF50; color: #fff; }
+.controls .remove { background: #f44336; color: #fff; }
+
+/* ================== CART BOX ================== */
+.cart-box {
+  background: #f9f9f9;
+  border: 2px solid #0077cc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+.cart-box h3 { color: #0077cc; margin-top: 0; }
+.cart-box .total { font-weight: bold; margin: 15px 0; }
+
+.cart-box label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.cart-box input,
+.cart-box textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cart-box button.checkout {
+  background: #28a745; color: #fff;
+  border: none; padding: 10px 18px;
+  border-radius: 5px; cursor: pointer;
+  flex: 1;
+}
+.cart-box button.clear {
+  background: #dc3545; color: #fff;
+  border: none; padding: 10px 18px;
+  border-radius: 5px; cursor: pointer;
+  flex: 1;
+}
+
+/* ================== PAYMENT ================== */
+.payment-method {
+  margin: 15px 0;
+}
+.payment-method label {
+  margin-right: 15px;
+  font-weight: bold;
+}
